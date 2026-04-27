@@ -2,7 +2,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import FriendDetail from './pages/FriendDetails'; 
+import FriendDetail from './pages/FriendDetails';
+import Timeline from './pages/Timeline';
 
 function App() {
   return (
@@ -12,20 +13,14 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-
-           
             <Route path="/friend/:id" element={<FriendDetail />} />
-
-            <Route
-              path="/timeline"
-              element={
-                <div className="p-10 text-center">Timeline Coming Soon</div>
-              }
-            />
+            <Route path="/timeline" element={<Timeline />} />
             <Route
               path="/stats"
               element={
-                <div className="p-10 text-center">Stats Coming Soon</div>
+                <div className="p-10 text-center text-4xl font-bold">
+                  Stats Coming Soon
+                </div>
               }
             />
           </Routes>
