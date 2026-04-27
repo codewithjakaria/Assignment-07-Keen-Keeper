@@ -17,7 +17,6 @@ export default function Navbar() {
             />
           </div>
 
-          {/* Menu */}
           <div className="flex items-center gap-2">
             <NavLink
               to="/"

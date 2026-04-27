@@ -2,18 +2,20 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import FriendDetail from './pages/FriendDetails'; 
 
 function App() {
   return (
     <BrowserRouter>
-      
       <div className="min-h-screen bg-gray-50 flex flex-col">
         <Navbar />
-
-     
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+
+           
+            <Route path="/friend/:id" element={<FriendDetail />} />
+
             <Route
               path="/timeline"
               element={
@@ -28,8 +30,6 @@ function App() {
             />
           </Routes>
         </main>
-
-        
         <Footer />
       </div>
     </BrowserRouter>
