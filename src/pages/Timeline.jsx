@@ -18,10 +18,10 @@ export default function Timeline() {
         onChange={e => setFilter(e.target.value)}
         className="mb-8 w-full max-w-xs bg-white border border-gray-200 rounded-2xl py-4 px-6 text-gray-700 outline-none shadow-sm"
       >
-        <option value="all">All Activities</option>
-        <option value="call">Calls</option>
-        <option value="text">Messages</option>
-        <option value="video">Videos</option>
+        <option value="all">Filter Timeline</option>
+        <option value="call">Call</option>
+        <option value="text">Text</option>
+        <option value="video">Video</option>
       </select>
 
       <div className="space-y-4">

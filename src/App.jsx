@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import FriendDetail from './pages/FriendDetails';
 import Timeline from './pages/Timeline';
+import Stats from './pages/Stats'
 
 function App() {
   return (
@@ -15,14 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/friend/:id" element={<FriendDetail />} />
             <Route path="/timeline" element={<Timeline />} />
-            <Route
-              path="/stats"
-              element={
-                <div className="p-10 text-center text-4xl font-bold">
-                  Stats Coming Soon
-                </div>
-              }
-            />
+            <Route path="/stats" element={<Stats />} />
           </Routes>
         </main>
         <Footer />
