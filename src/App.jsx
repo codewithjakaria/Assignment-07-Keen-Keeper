@@ -1,10 +1,13 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
+
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import FriendDetail from './pages/FriendDetails';
 import Timeline from './pages/Timeline';
-import Stats from './pages/Stats'
+import Stats from './pages/Stats';
 
 function App() {
   return (
@@ -20,6 +23,13 @@ function App() {
           </Routes>
         </main>
         <Footer />
+
+        <ToastContainer
+          position="bottom-right"
+          autoClose={2000}
+          hideProgressBar={true}
+          theme="light"
+        />
       </div>
     </BrowserRouter>
   );
